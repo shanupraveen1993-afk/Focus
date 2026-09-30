@@ -1,26 +1,23 @@
-import Navbar from "./components/focus/Navbar";
-import Hero from "./components/focus/Hero";
-import Philosophy from "./components/focus/Philosophy";
-import Services from "./components/focus/Services";
-import ClarityChecker from "./components/focus/ClarityChecker";
-import Methodology from "./components/focus/Methodology";
-import About from "./components/focus/About";
-import Contact from "./components/focus/Contact";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import CustomCursor from "./components/CustomCursor";
 
 export default function Home() {
   return (
-    <div className="bg-[#faf8f5]">
+    <div className="bg-[#0c0c0e] text-white min-h-screen">
+      <CustomCursor />
       <Navbar />
       <main>
         <Hero />
-        <Philosophy />
-        <Services />
-        <ClarityChecker />
-        <Methodology />
+        <Projects />
         <About />
       </main>
-      <Contact />
+      <Footer />
     </div>
   );
 }
+
 
